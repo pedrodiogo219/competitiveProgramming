@@ -1,0 +1,29 @@
+Dado um valor N, mostre os próximos 5 múltiplos de N.
+
+Entrada:
+O arquivo de entrada contém um valor inteiro, correspondente a N, tal que N <= 10000.
+
+Saída:
+A saída deverá apresentar os próximos 5 múltiplos de N um em cada linha.
+
+
+Exemplo de entrada:
+3
+
+Exemplo de saída:
+6
+9
+12
+15
+18
+
+Exemplo de entrada:
+1
+
+Exemplo de saída:
+2
+3
+4
+5
+6
+
