@@ -12,23 +12,29 @@ int main(){
     scanf("%lld %lld", &n, &k);
 
     if(n >= k){
-      printf("%lld\n", k-1LL);
+      printf("%lld\n", (k-1LL)%MOD);
       continue;
     }
 
-    ll a = (n + k - 1LL )%MOD;
-    ll b = ( k-n )%MOD;
+    ll vezes = n-1LL;
+    ll comprimento = k - n;
+    ll parte = comprimento / vezes;
+    ll resto = comprimento % vezes;
 
-    if(a%2 == 0) a/=2;
-    else b/=2;
+    ll soma =
+    (
+      (
+        (
+          (
+            ((1LL + (parte%MOD))%MOD)*(parte%MOD)
+          )%MOD * 500000004
+        )%MOD
+      )*(vezes%MOD)
+    )%MOD;
 
-    ll p1 = (a * b)%MOD;
-    ll p2 = (n%MOD * (k-n)%MOD)%MOD;
-    ll p3 = (k-n)%MOD;
+    soma += ((resto%MOD) * (((parte%MOD)+1LL)%MOD) )%MOD;
 
-    ll res = ceil( (double)(p1 - p2 + p3) / (double)(n-1LL) );
-    res = (res%MOD + (k-1LL)%MOD)%MOD;
-    printf("%lld\n", res);
+    printf("%lld\n",  ((soma%MOD) + (k - 1LL)%MOD )%MOD );
 
   }
 }
