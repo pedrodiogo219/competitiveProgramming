@@ -19,6 +19,7 @@ int main(){
     }
   }
 
+
   bool descida = true;
   for(int i = n/2 + 1; i < n; i++){
     if( !(v[i] < v[i-1]) ){
