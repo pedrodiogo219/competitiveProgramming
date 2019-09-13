@@ -1,3 +1,6 @@
+// ###### EULER-PHI #######
+// a ^ (phi(m)) === 1 (mod m)       multiplica os dois lados por a^(-1)
+// a ^ (phi(m) - 1) === a^(-1)  (mod m)
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -36,20 +39,12 @@ int phi(int m){
     m/=factor;
     k++;
   }
-
   return ( expo(factor, k) - expo(factor, k-1) ) * phi(m);
 }
 
 
 int main(){
   crivo();
-  // for(int i = 0; i <= 20; i++){
-  //   cout << i << " --- ";
-  //   for(int j = 0; j < fact[i].size(); j++){
-  //     cout << fact[i][j] << " ";
-  //   }
-  //   cout << endl;
-  // }
 
   int t; scanf("%d", &t);
   int a, m;
@@ -57,9 +52,6 @@ int main(){
     scanf("%d %d", &a, &m);
     if(__gcd(a, m) != 1) printf("-1\n");
     else printf("%d\n", phi(m));
-    //
-    // scanf("%d", &m);
-    // printf("phi(m): %d\n", phi(m));
   }
 
 }

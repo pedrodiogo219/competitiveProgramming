@@ -1,4 +1,5 @@
 //######### MUH and Cube Walls #########
+// achar quantas vezes um padrão aparece na string
 
 #include<bits/stdc++.h>
 using namespace std;

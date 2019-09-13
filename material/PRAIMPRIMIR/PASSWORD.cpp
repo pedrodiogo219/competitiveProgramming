@@ -1,5 +1,6 @@
 //######### PASSWORD #########
-
+// achar a maior substring que é prefixo, sufixo
+// e aparece no meio da string ao mesmo tempo
 
 #include<bits/stdc++.h>
 using namespace std;

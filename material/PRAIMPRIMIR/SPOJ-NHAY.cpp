@@ -1,5 +1,5 @@
 //######## SPOJ-NHAY ########
-// stream oriented kmp
+// stream-oriented kmp
 
 #include<bits/stdc++.h>
 using namespace std;
