@@ -11,11 +11,16 @@ using namespace std;
 typedef pair<int, int> ii;
 typedef long long ll;
 
-#define T int t; cin >> t; while( t--)
-
 int n, m;
 int main(){
   iosbase;
   tie;
 
+  string s; cin >> s;
+
+  if(s == "Sunny") cout << "Cloudy";
+  if(s == "Cloudy") cout << "Rainy";
+  if(s == "Rainy") cout << "Sunny";
+
+  cout << endl;
 }

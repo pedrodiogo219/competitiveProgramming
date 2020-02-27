@@ -11,11 +11,13 @@ using namespace std;
 typedef pair<int, int> ii;
 typedef long long ll;
 
-#define T int t; cin >> t; while( t--)
-
 int n, m;
 int main(){
   iosbase;
   tie;
 
+  int t; cin >> t;
+  while( t--){
+    
+  }
 }
